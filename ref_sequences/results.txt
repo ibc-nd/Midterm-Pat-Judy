@@ -1,0 +1,22 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+sp|P50023.2|DNAK_THEAC -          aligned              -                  0 1127.0  22.8         0 1126.9  22.8   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q6L0S7.1|DNAK_PICTO -          aligned              -                  0 1124.2  19.4         0 1124.1  19.4   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q97BG8.1|DNAK_THEVO -          aligned              -                  0 1108.2  24.4         0 1108.1  24.4   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|O27351.1|DNAK_METTH -          aligned              -                  0 1078.2  20.6         0 1078.0  20.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|A0RZ01.1|DNAK_CENSY -          aligned              -                  0 1077.7  22.2         0 1077.4  22.2   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|A9A135.1|DNAK_NITMS -          aligned              -                  0 1077.0  28.2         0 1076.7  28.2   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q9UXR0.1|DNAK_METTE -          aligned              -                  0 1066.3  20.0         0 1066.2  20.0   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q8TQR2.1|DNAK_METAC -          aligned              -                  0 1063.8  22.5         0 1063.6  22.5   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q01100.2|DNAK_HALMA -          aligned              -           8.1e-303  994.4  27.0  9.7e-303  994.2  27.0   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      profile.hmm
+# Target file:     combined_hsp70.fasta
+# Option settings: hmmsearch --tblout results.txt profile.hmm combined_hsp70.fasta 
+# Current dir:     /Users/homeadmin/Biocomputing/data_4/bioinformatics_project/ref_sequences
+# Date:            Wed Oct  7 11:15:45 2026
+# [ok]
