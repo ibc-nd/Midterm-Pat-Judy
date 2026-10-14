@@ -1,4 +1,5 @@
-#Outer Loop
+ref_fasta="$1"
+proteome_fasta="$2"
 
 For x in combined_hsp70.fasta
 do
