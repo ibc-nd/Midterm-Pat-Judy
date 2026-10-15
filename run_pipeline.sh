@@ -3,7 +3,7 @@ ref_fasta="$1"
 proteome_fasta="$2"
 
 #Outer loop
-for x in ref_sequences/combined_*.fasta
+for x in ref_sequences/$ref_fasta
 
 do
 #Assigning variables for easier reading, and preventing the filename from including the directory 
