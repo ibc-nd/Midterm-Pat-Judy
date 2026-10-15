@@ -2,6 +2,9 @@
 ref_fasta="$1"
 proteome_fasta="$2"
 
+#Create csv file and write the header rows
+echo "proteome,num_hits" > pipeline_results.csv
+
 #Outer loop
 for x in ref_sequences/$ref_fasta
 
@@ -27,6 +30,9 @@ hmmsearch -o dump.txt --tblout ${proteomefile}.tbl $z $proteome
 
 #Command used to identify the number of significant hits from hsp70_proteome_01.tbl
 num_hits=$(grep -v "^#" ${proteomefile}.tbl | awk '$5 < 0.001' | wc -l)
+
+#Append the results to the pipeline_results.csv file
+echo "${proteomefile},${num_hits}" >> pipeline_results.csv
 
 done
 
