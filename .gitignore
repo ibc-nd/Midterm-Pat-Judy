@@ -1,0 +1,5 @@
+#Ignore temporary bioinformatics outputs
+results/exercise03/*.hmm
+results/exercise03/*.afa
+results/exercise03/*.tbl
+results/exercise03/dump.txt
