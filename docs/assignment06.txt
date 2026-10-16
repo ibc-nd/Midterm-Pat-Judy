@@ -22,7 +22,7 @@ A low E-value indicates that a hit is real. We apply a threshold (<0.001) to est
 
  
 3)
-run_pipeline.sh attached to assignment.
+run_pipeline.sh found in scripts/. Also attached to assignment on Canvas.
 Test on 5 proteomes:
 	proteome,num_hits
 	proteome_01.fasta,4
