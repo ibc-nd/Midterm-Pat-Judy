@@ -59,6 +59,13 @@ deletion probabilities across an entire protein family. This allows for detectio
 that have diverged too much in a sequence identity for a single search, such as BLAST, to recognize.
   
 Judy
-5a)
+5a) Pairwise alignment compares two sequences and evaluates the conservation between the set by
+using dashes to suggest differences, such as insertions or deletions. Pairwise alignment is used
+when you only want to compare two sequences. For instance, comparing an unknown sequence to a 
+known reference sequence, or comparing the variation between two mutant strains. Profile searching 
+converts multiple sequences alignments to a profile, which then is compared to a database. It can
+provide the probability of a match being true.Profile searching is used when you want to compare
+multiple sequences and identify a pattern or homology. 
+ 
 
 5b)
