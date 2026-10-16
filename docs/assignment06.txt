@@ -45,9 +45,12 @@ Fewest hits: proteome_02, proteome_06, proteome_17, proteome_28. proteome_29, pr
 4c) The variation in hit counts can answer the question of how many hsp70
 or mcrA genes are located within each of the respective proteomes. 
 
-
+Pat 
 5a) 
 
 5b)
   
+Judy
+5a)
 
+5b)
