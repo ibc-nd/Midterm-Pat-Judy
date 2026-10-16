@@ -1,0 +1,19 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_015941672.1       -          combined_hsp70.fasta_aligned -           2.4e-278  922.2  17.8  6.2e-247  818.5  13.2   2.0   2   0   0   2   2   2   2 molecular chaperone DnaK 
+WP_015941419.1       -          combined_hsp70.fasta_aligned -             5e-271  898.1  11.9  1.5e-240  797.4   6.8   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+WP_015942306.1       -          combined_hsp70.fasta_aligned -            4.7e-33  112.1   0.0   1.1e-18   64.6   0.0   3.0   2   1   0   3   3   3   3 Hsp70 family protein 
+WP_012616267.1       -          combined_hsp70.fasta_aligned -              2e-11   40.6   5.7     8e-10   35.3   2.2   2.8   2   1   0   2   2   2   2 rod shape-determining protein 
+WP_012616464.1       -          combined_hsp70.fasta_aligned -            1.1e-10   38.2   8.3   7.6e-10   35.4   8.3   2.3   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_015941576.1       -          combined_hsp70.fasta_aligned -            9.7e-05   18.5   1.3    0.0012   14.9   0.1   2.3   2   0   0   2   2   2   1 cell division protein FtsA 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_11.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_11.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_11.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:12 2026
+# [ok]

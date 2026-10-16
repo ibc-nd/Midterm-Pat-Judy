@@ -1,0 +1,16 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_001062605.1       -          combined_hsp70.fasta_aligned -           3.8e-253  839.1  30.9  9.6e-225  745.3  26.0   2.0   1   1   1   2   2   2   2 MULTISPECIES: molecular chaperone DnaK 
+WP_001196574.1       -          combined_hsp70.fasta_aligned -           6.6e-146  484.9   7.2  2.5e-145  483.0   7.2   1.7   1   1   0   1   1   1   1 MULTISPECIES: Fe-S protein assembly chaperone HscA 
+WP_000601379.1       -          combined_hsp70.fasta_aligned -            1.9e-13   47.4   0.7   6.3e-13   45.6   0.7   1.9   1   1   0   1   1   1   1 MULTISPECIES: rod shape-determining protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_43.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_43.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_43.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:14 2026
+# [ok]

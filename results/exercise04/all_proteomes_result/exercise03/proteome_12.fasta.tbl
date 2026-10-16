@@ -1,0 +1,20 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_011957951.1       -          combined_hsp70.fasta_aligned -             7e-281  930.9  15.7  2.1e-248  823.7  10.3   2.0   2   0   0   2   2   2   2 molecular chaperone DnaK 
+WP_011958160.1       -          combined_hsp70.fasta_aligned -           2.8e-265  879.4  12.1  5.7e-236  782.6   5.5   2.0   2   0   0   2   2   2   2 molecular chaperone DnaK 
+WP_011955291.1       -          combined_hsp70.fasta_aligned -              5e-13   46.2   4.5   3.7e-11   40.0   1.0   2.8   2   1   0   2   2   2   2 rod shape-determining protein 
+WP_011956039.1       -          combined_hsp70.fasta_aligned -            2.5e-09   34.0   6.9   6.6e-08   29.3   6.9   2.3   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_011959219.1       -          combined_hsp70.fasta_aligned -            0.00025   17.5   0.2    0.0017   14.8   0.1   1.9   2   0   0   2   2   2   1 carbohydrate kinase 
+WP_011958489.1       -          combined_hsp70.fasta_aligned -             0.0028   14.0   4.0     0.015   11.6   0.5   2.9   3   0   0   3   3   3   1 cell division protein FtsA 
+WP_011957316.1       -          combined_hsp70.fasta_aligned -              0.074    9.3   0.1      0.17    8.2   0.0   1.5   2   0   0   2   2   2   0 xylulose kinase 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_12.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_12.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_12.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:12 2026
+# [ok]
