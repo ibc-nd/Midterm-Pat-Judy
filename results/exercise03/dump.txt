@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  results/exercise03/combined_mcrA.fasta_profile.hmm
+# target sequence database:        bioinformatics_project/proteomes/proteome_50.fasta
+# output directed to file:         results/exercise03/dump.txt
+# per-seq hits tabular output:     results/exercise03/proteome_50.fasta.tbl
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       combined_mcrA.fasta_aligned  [M=556]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+          0 1115.4   2.5          0 1115.2   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1115.2   2.5         0         0       1     556 []       1     570 []       1     570 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 1115.2 bits;  conditional E-value: 0
+  combined_mcrA.fasta_aligned   1 maaekkkkflkalkkkfeee..........itekttkfyrlgGvkqsarkkelvkaakeiaekrGialynpdvhaGvplGqr 72 
+                                  maa++++kf+k++++kf++e          it kt+kf+rl G++q++rk+e++ka+keiaekrGi++ynp++h+G+plGqr
+               WP_048120720.1   1 MAADIFSKFKKDMEVKFAQEfgankqtggdITGKTEKFLRL-GPEQDPRKVEMIKAGKEIAEKRGISFYNPMMHSGAPLGQR 81 
+                                  8999************************************9.**************************************** PP
+
+  combined_mcrA.fasta_aligned  73 almpykvsgtdivvegddlhfvnnaalqqlwddirrtvivgldtahevlekrlgkevtpetineylevlnhalpGaavvqeh 154
+                                  a++py++sgtdiv+e+ddlh+vnnaa+qq+wddirrt++vgld+ahe+lekrlgkevtpetin+ylevlnha+pGaavvqe+
+               WP_048120720.1  82 AITPYTISGTDIVAEPDDLHYVNNAAMQQMWDDIRRTCVVGLDMAHETLEKRLGKEVTPETINHYLEVLNHAMPGAAVVQEM 163
+                                  ********************************************************************************** PP
+
+  combined_mcrA.fasta_aligned 155 mvethpalvddcyvkvftGddeladeidkqfvidinkefpeeqaeqlkaaiGkttwqavrvptivsrvtdGgttsrwsamqi 236
+                                  mvethpalvddcyvkvftGdd+ladeidkq++idinkef+eeqa+q+ka+iGkt wqa+++ptivsr+tdG++t+rw+amqi
+               WP_048120720.1 164 MVETHPALVDDCYVKVFTGDDALADEIDKQYLIDINKEFSEEQAAQIKASIGKTSWQAIHIPTIVSRTTDGAQTTRWAAMQI 245
+                                  ********************************************************************************** PP
+
+  combined_mcrA.fasta_aligned 237 gmsfisayklcaGeaavadlsyaakhaevvsmgellparrargpnepGGlsfGvladivqtsrvsaddpakvslevvaagam 318
+                                  gmsfisay++caGeaavadls+aakha+ vsmge+lparrargpnepGGlsfG+l+di+qtsrvs +dpak++levv+ag+m
+               WP_048120720.1 246 GMSFISAYAMCAGEAAVADLSFAAKHAAAVSMGEMLPARRARGPNEPGGLSFGHLSDIIQTSRVS-KDPAKIALEVVGAGCM 326
+                                  *****************************************************************.9*************** PP
+
+  combined_mcrA.fasta_aligned 319 lydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygga......nkvkatldvvkdiatevtlyaleqyeky 394
+                                  lydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+ga      nkvka+ldvvkdiate+tly++e+yek+
+               WP_048120720.1 327 LYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAanvgkdNKVKASLDVVKDIATESTLYGIETYEKF 408
+                                  ***********************************************999***9**************************** PP
+
+  combined_mcrA.fasta_aligned 395 palledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGfyGydlqdqcGaanvlsyrsdeglplel 476
+                                  p++ledhfGGsqratvlaaaaGva++lat+nanaGlsgwylsm+lhkea++rlGf+G+dlqdqcGa+nvlsy++deglp+el
+               WP_048120720.1 409 PTALEDHFGGSQRATVLAAAAGVACSLATANANAGLSGWYLSMYLHKEAWGRLGFFGFDLQDQCGATNVLSYQGDEGLPDEL 490
+                                  ********************************************************************************** PP
+
+  combined_mcrA.fasta_aligned 477 rGpnypnyamnvGhqgeyagiaqaahaargdafalnplikvafaddslvfdfaeprkefarGalrefepaGersliipak 556
+                                  rGpnypnyamnvGhqg+yagiaqaah++rgdaf++nplikv+fadd+l+f+faepr+ef+rGa+ref+paGersl+ipak
+               WP_048120720.1 491 RGPNYPNYAMNVGHQGGYAGIAQAAHSGRGDAFTVNPLIKVCFADDLLPFNFAEPRREFGRGAMREFVPAGERSLVIPAK 570
+                                  ******************************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (556 nodes)
+Target sequences:                       3436  (1017542 residues searched)
+Passed MSV filter:                        90  (0.0261932); expected 68.7 (0.02)
+Passed bias filter:                       71  (0.0206636); expected 68.7 (0.02)
+Passed Vit filter:                         5  (0.00145518); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000291036); expected 0.0 (1e-05)
+Initial search space (Z):               3436  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 37061.92
+//
+[ok]
