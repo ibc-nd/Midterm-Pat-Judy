@@ -1,6 +1,3 @@
- project purpose, the commands to run your
-pipeline, any required software/modules, and a brief description of the results
-
 Project purpose: 
 Use multiple muscle sequence alignment and build a Hidden Markov Model profile to...
 1) Identify proteomes that come from methanogens 
