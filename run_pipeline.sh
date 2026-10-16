@@ -1,9 +1,16 @@
-#Arguments
+#Usage= bash run_pipeline.sh $1 $2
+#Arguments:
+# $1 is any references fasta file from the ref_sequences file (mcrA or hsp70)
+# $2 is the proteome directory that contains all 50 proteomes (/proteomes)
+
 ref_fasta="$1"
 proteome_fasta="$2"
 
 #Create csv file and write the header rows
 echo "proteome,num_hits" > ${ref_fasta}_pipeline_results.csv
+
+#Creates a csv file and write the header rows
+echo "proteome,num_hits" > pipeline_results.csv
 
 #Outer loop
 for x in ref_sequences/$ref_fasta
