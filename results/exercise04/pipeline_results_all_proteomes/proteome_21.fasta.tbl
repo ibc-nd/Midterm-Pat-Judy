@@ -1,0 +1,17 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          combined_hsp70.fasta_aligned -           1.6e-275  912.8  19.2  1.4e-242  804.0  14.1   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+NP_953138.1          -          combined_hsp70.fasta_aligned -            1.4e-12   44.4   3.8   3.8e-12   42.9   3.8   1.9   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          combined_hsp70.fasta_aligned -              4e-07   26.3   0.3     6e-07   25.7   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951605.1          -          combined_hsp70.fasta_aligned -                1.6    4.5   9.5       2.5    3.8   9.5   1.2   1   0   0   1   1   1   0 DNA mismatch repair ATPase MutS-2 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_21.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_21.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_21.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:13 2026
+# [ok]

@@ -1,0 +1,18 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_053549228.1       -          combined_hsp70.fasta_aligned -           7.7e-273  903.9  22.6  6.8e-241  798.4  17.4   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+WP_053550046.1       -          combined_hsp70.fasta_aligned -            1.9e-12   43.9   6.4   9.1e-12   41.6   6.4   2.1   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_053550303.1       -          combined_hsp70.fasta_aligned -             0.0053   12.7   0.1    0.0082   12.1   0.1   1.2   1   0   0   1   1   1   1 4-hydroxy-3-methylbut-2-enyl diphosphate reductase 
+WP_053549249.1       -          combined_hsp70.fasta_aligned -             0.0068   12.3   0.2      0.16    7.8   0.0   2.0   2   0   0   2   2   2   2 ketoacyl-ACP synthase III 
+WP_082351077.1       -          combined_hsp70.fasta_aligned -              0.016   11.2   0.5     0.048    9.5   0.1   1.8   2   0   0   2   2   2   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_31.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_31.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_31.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:14 2026
+# [ok]

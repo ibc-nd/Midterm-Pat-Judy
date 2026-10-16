@@ -1,0 +1,15 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_011971911.1       -          combined_hsp70.fasta_aligned -           8.9e-101  334.6   8.1  2.1e-100  333.4   8.1   1.5   1   1   0   1   1   1   1 2-alkenal reductase 
+WP_011971910.1       -          combined_hsp70.fasta_aligned -               0.96    4.2  25.2     0.086    7.7  11.3   2.1   2   0   0   2   2   2   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_15.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_15.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_15.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:12 2026
+# [ok]

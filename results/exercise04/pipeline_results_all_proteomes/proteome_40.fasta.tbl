@@ -1,0 +1,15 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010867429.1       -          combined_hsp70.fasta_aligned -             0.0035   12.4   6.4    0.0042   12.1   6.4   1.1   1   0   0   1   1   1   1 transcriptional regulator 
+WP_010868356.1       -          combined_hsp70.fasta_aligned -             0.0075   11.3   3.8    0.0082   11.2   3.8   1.1   1   0   0   1   1   1   1 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_40.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_40.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_40.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:14 2026
+# [ok]

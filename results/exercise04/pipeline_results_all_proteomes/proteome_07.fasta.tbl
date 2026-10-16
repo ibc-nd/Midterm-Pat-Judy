@@ -1,0 +1,15 @@
+#                                                                       --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                   accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------         -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_012107167.1       -          combined_hsp70.fasta_aligned -           1.3e-299  991.9  19.8  1.5e-299  991.7  19.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_012106756.1       -          combined_hsp70.fasta_aligned -           1.9e-283  938.5  24.1  2.4e-283  938.2  24.1   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      results/exercise03/combined_hsp70.fasta_profile.hmm
+# Target file:     proteomes/proteome_07.fasta
+# Option settings: hmmsearch -o results/exercise03/dump.txt --tblout results/exercise03/proteome_07.fasta.tbl results/exercise03/combined_hsp70.fasta_profile.hmm proteomes/proteome_07.fasta 
+# Current dir:     /users/jjiang23/Midterm-Pat-Judy
+# Date:            Thu Oct 15 22:26:12 2026
+# [ok]
