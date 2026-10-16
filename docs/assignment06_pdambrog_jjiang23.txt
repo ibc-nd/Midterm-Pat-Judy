@@ -1,0 +1,76 @@
+
+1a) 
+muscle -align combined_hsp70.fasta -output hsp70_aligned.afa
+Creates a multiple sequences alignment for all hsp70 proteins by indicating insertions and deletions via "-" notation. "-" are inserted into protein sequences so all rows are equal.
+
+1b)
+hmmbuild hsp70profile.hmm hsp70_aligned.afa
+Profile name: hsp70profile.hmm 
+
+
+2a)
+#Command used to  produce a table that saves structured, hit results from searching the hsp70profile.hmm against proteoma_01
+hmmsearch -o dump.txt --tblout hsp70_proteome_01.tbl results/exercise01/hsp70profile.hmm proteomes/proteome_01.fasta
+
+2b)
+#Command used to identify the number of significant hits from hsp70_proteome_01.tbl
+grep -v "^#" results/exercise02/hsp70_proteome_01.tbl | awk '$5 < 0.001' | wc -l
+
+2c)
+Four signficant hits were found. E-value represents the expected number of false positives you would expect to see by chance in a database search.
+A low E-value indicates that a hit is real. We apply a threshold (<0.001) to establish a baseline for statistical significance.
+
+ 
+3)
+run_pipeline.sh found in scripts/. Also attached to assignment on Canvas.
+Test on 5 proteomes:
+	proteome,num_hits
+	proteome_01.fasta,4
+	proteome_02.fasta,0
+	proteome_03.fasta,3
+	proteome_04.fasta,4
+	proteome_05.fasta,2
+
+
+4a) 
+bash run_pipeline.sh combined_hsp70.fasta proteomes
+Results found in results/exercise04/all_proteomes_result
+
+
+4b) 
+Most hits: proteome_18 and proteome_22. Both had 7 hits.
+Fewest hits: proteome_02, proteome_06, proteome_17, proteome_28. proteome_29, proteome_33, proteome_40, proteome_46. All had 0 hits.
+
+
+4c) The variation in hit counts can answer the question of how many hsp70
+or mcrA genes are located within each of the respective proteomes. 
+
+Pat 
+5a) Pairwise alignment is a method that compares two sequences against each other and aligns them by
+inserting gaps and matching residues using "-". You should use pairwise alignment if you want to find
+the degree of similarity between two specific sequences. Profile-based searching is a method that
+builds a statistical profile from a multiple sequence alignment of an entire protein family. This is
+useful when you want to search entire proteomes or genomic databases for members of a conserved
+protein family. 
+
+5b) Building an HMM profile from multiple sequences is more sensitive than using a single seqeunce as
+a BLAST query because a HMM profile indicates position-specific conservation and shows insertion and
+deletion probabilities across an entire protein family. This allows for detection of distant homologs
+that have diverged too much in a sequence identity for a single search, such as BLAST, to recognize.
+  
+Judy
+5a) Pairwise alignment compares two sequences and evaluates the conservation between the set by
+using dashes to suggest differences, such as insertions or deletions. Pairwise alignment is used
+when you only want to compare two sequences. For instance, comparing an unknown sequence to a 
+known reference sequence, or comparing the variation between two mutant strains. Profile searching 
+converts multiple sequences alignments to a profile, which then is compared to a database. It can
+provide the probability of a match being true.Profile searching is used when you want to compare
+multiple sequences and identify a pattern or homology. 
+ 
+
+5b) HMM profile is more sensitive than putting a single sequence into BLAST because HMM
+utilizes statistics and a mathematical model to calculate the probability of a site from 
+a multiple sequence alignment. Specifically, it can track the probability of mutations such as
+insertions and deletions at a site, and detect homologs. BLAST can only compare the similarity of a
+sequence against a reference sequence and utilizes a rigid framework, making it less likely to 
+identify variable regions like HMM.
