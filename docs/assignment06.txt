@@ -46,9 +46,17 @@ Fewest hits: proteome_02, proteome_06, proteome_17, proteome_28. proteome_29, pr
 or mcrA genes are located within each of the respective proteomes. 
 
 Pat 
-5a) 
+5a) Pairwise alignment is a method that compares two sequences against each other and aligns them by
+inserting gaps and matching residues using "-". You should use pairwise alignment if you want to find
+the degree of similarity between two specific sequences. Profile-based searching is a method that
+builds a statistical profile from a multiple sequence alignment of an entire protein family. This is
+useful when you want to search entire proteomes or genomic databases for members of a conserved
+protein family. 
 
-5b)
+5b) Building an HMM profile from multiple sequences is more sensitive than using a single seqeunce as
+a BLAST query because a HMM profile indicates position-specific conservation and shows insertion and
+deletion probabilities across an entire protein family. This allows for detection of distant homologs
+that have diverged too much in a sequence identity for a single search, such as BLAST, to recognize.
   
 Judy
 5a)
