@@ -3,7 +3,7 @@ ref_fasta="$1"
 proteome_fasta="$2"
 
 #Create csv file and write the header rows
-echo "proteome,num_hits" > pipeline_results.csv
+echo "proteome,num_hits" > ${ref_fasta}_pipeline_results.csv
 
 #Outer loop
 for x in ref_sequences/$ref_fasta
