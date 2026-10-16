@@ -74,3 +74,60 @@ a multiple sequence alignment. Specifically, it can track the probability of mut
 insertions and deletions at a site, and detect homologs. BLAST can only compare the similarity of a
 sequence against a reference sequence and utilizes a rigid framework, making it less likely to 
 identify variable regions like HMM.
+
+
+
+
+Git Log
+6df13e0 Judy J: renamed file to include our NETID
+eab4ade Judy J: attempt to add exercise03 folder to GitHub
+c31dd3e Judy J: attempt to move run_pipeline.sh to scripts/
+53ce684 Judy J: answered 5b
+800a8f4 Judy J: answered 5a
+9bfda0e Judy J: changed filename
+e73e8f6 Judy J: changed directory name for clarity
+4da6022 Judy J: tried hsp70 and mcrA combined fasta files on script
+0e221d5 Judy J: fixed script and changed folder path for each argument
+ae77933 Judy J: attempt to merge
+c40e6ab Pat D: Created bioinformatics_project directory and added proteomes/ findGenes.sh and ref_sequences to it
+0e90750 Pat D: Answered 5a and 5b under docs/assignment06.txt
+a25387d Judy J: updated run_pipeline.sh
+32d4f55 Pat D: Added space for Pat and Judy to answer question 5
+d148c37 Judy J: attempted to add varaible to csv file
+48d8204 Pat D: Added usage statement and explanation of variables for the  and
+b932ce7 Pat D: Answered 4c
+cc6e9b8 Judy J: removed instructions for README
+fccdc26 Judy J: Added project description and necessary information to run pipeline
+3ed632c Judy J: edited response for 3. Included path to find run_pipeline.sh
+4d891e3 Judy J: consolidated our answers from scripts into a text file
+517a951 Judy J: moved run_pipeline.sh to scripts directory
+79e5f1c Judy J: command and results for 4a shown, and 4b answered
+2bb3890 Judy J: attempt to remove nested folders
+a7e6bc0 Judy J: tested and ran pipeline on all proteomes for 4a
+5a2dd6c Pat D: Changed run_pipeline.sh to output temp files to results/exercise03/ and changed .gitignore to ignore those files
+059cd3b Pat D: Tested run_pipeline.sh and coded to add pipeline_results.csv with headers and appending data
+36204ea Judy J: updated inner loop and assigned variables for 3
+4d947aa Judy J: updated outer loop to match argument and not the combined fasta file
+dbf7fd5 Judy J: updated outer loop to read the combined fasta file
+273c8e8 Judy J: updated outer loop by assigning variables for easier reading and reusability for arguments. Also cleaned filename to prevent directory from being included by using basename
+f4506da Judy J: Assigned variables for easier reading in the outer loop of run_pipeline.sh
+d800bfa Pat D: Modified variables within loop to align with and changed to filer significant hits for all $
+3b9ec03 Pat D: Added 2 variables for ref_fasta and proteome_fasta
+a493ca6 Pat D: Added a for loop for searching all proteomes in directory
+68098ca Judy J: 3a. drafted outer loop for reference sequences
+500a0ee Pat D: Cated all mcrA.fasta files into combined_mcrA.fasta
+e1d56b2 Pat D: Added alignment and hmm profile script to start the pipeline
+53d1467 Judy J: Filtered hsp70_proteome_01.tbl to only include rows with an E value < 0.001. This was used to check the command written for 2b in scripts/exercise02.sh
+5bffddf Judy J: Added commands for 2b to identify the number of significant hits from 2a. Also included 2c in the comments
+64181f6 Pat D: Performed Exercise 2a by using script found in exercise02.sh and hsp70_proteome_01.tbl found under results/exercise02
+edd8042 Judy J: updated exercise01.sh to include commands used to build a HMM profile for 1b
+eb5a847 Judy J: renamed hmmprofile.hmm to hsp70profile.hmm
+252d1f4 Judy J: built HMM profile from aligned sequence in /results/exercise01 using hmmbuild. Named file hmmprofile.hmm
+ebd3579 Pat D: Modified exercise01.sh to contain usage statement and correct flags
+a8c11bb Pat D: Added exercise subdirectories under results and moved part 01a aligned.afa into exercise01/
+076ee7a Pat D: Added script for Exercise 01a
+f837393 Pat D: Complete merge of local and remote branches on CRC
+b96a4d3 Pat D: Created aligned.afa using combined_hsp70.fasta
+6b071a7 Pat D: Restructured Repository
+7a754db Pat D: Added .gitignore file
+16b0157 Pat D: Add pipeline and proteome results
