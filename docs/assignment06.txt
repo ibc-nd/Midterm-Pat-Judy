@@ -68,4 +68,9 @@ provide the probability of a match being true.Profile searching is used when you
 multiple sequences and identify a pattern or homology. 
  
 
-5b)
+5b) HMM profile is more sensitive than putting a single sequence into BLAST because HMM
+utilizes statistics and a mathematical model to calculate the probability of a site from 
+a multiple sequence alignment. Specifically, it can track the probability of mutations such as
+insertions and deletions at a site, and detect homologs. BLAST can only compare the similarity of a
+sequence against a reference sequence and utilizes a rigid framework, making it less likely to 
+identify variable regions like HMM.
