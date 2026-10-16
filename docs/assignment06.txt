@@ -1,0 +1,52 @@
+
+1a) 
+muscle -align combined_hsp70.fasta -output hsp70_aligned.afa
+Creates a multiple sequences alignment for all hsp70 proteins by indicating insertions and deletions via "-" notation. "-" are inserted into protein sequences so all rows are equal.
+
+1b)
+hmmbuild hsp70profile.hmm hsp70_aligned.afa
+Profile name: hsp70profile.hmm 
+
+
+2a)
+#Command used to  produce a table that saves structured, hit results from searching the hsp70profile.hmm against proteoma_01
+hmmsearch -o dump.txt --tblout hsp70_proteome_01.tbl results/exercise01/hsp70profile.hmm proteomes/proteome_01.fasta
+
+2b)
+#Command used to identify the number of significant hits from hsp70_proteome_01.tbl
+grep -v "^#" results/exercise02/hsp70_proteome_01.tbl | awk '$5 < 0.001' | wc -l
+
+2c)
+Four signficant hits were found. E-value represents the expected number of false positives you would expect to see by chance in a database search.
+A low E-value indicates that a hit is real. We apply a threshold (<0.001) to establish a baseline for statistical significance.
+
+ 
+3)
+run_pipeline.sh attached to assignment.
+Test on 5 proteomes:
+	proteome,num_hits
+	proteome_01.fasta,4
+	proteome_02.fasta,0
+	proteome_03.fasta,3
+	proteome_04.fasta,4
+	proteome_05.fasta,2
+
+
+4a) 
+bash run_pipeline.sh combined_hsp70.fasta proteomes
+Results found in results/exercise04/all_proteomes_result
+
+
+4b) 
+Most hits: proteome_18 and proteome_22. Both had 7 hits.
+Fewest hits: proteome_02, proteome_06, proteome_17, proteome_28. proteome_29, proteome_33, proteome_40, proteome_46. All had 0 hits.
+
+
+4c)
+
+
+5a)
+
+5b)
+  
+
